@@ -1,0 +1,67 @@
+/* styles/Slider.module.css */
+.sliderContainer {
+    position: relative;
+    max-width: 900px;
+    height: auto;
+    margin: 100px auto;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .testimonialCard {
+    text-align: center;
+    background-color: #004d40;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonialCard h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonialCard p {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .testimonialCard span {
+    font-size: 16px;
+    color: #b2dfdb;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navButton {
+    background-color: #00897b;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .navButton:hover {
+    background-color: #004d40;
+  }
+  
