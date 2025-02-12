@@ -1,0 +1,85 @@
+/* styles/ContactForm.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #d7f3f8;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  .contactBox,.formBox {
+    background-color: #003b49;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 15px;
+    width: 40%;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+  }
+
+  .contactBox hr {
+    width: 100%; /* Ensure full width */
+    border: none; /* Remove default border */
+    border-top: 2px solid white; /* Add a visible line */
+    margin: 10px 0; /* Add spacing */
+}
+
+  .contactBox h2,
+  .formBox h2 {
+    margin-bottom: 35px;
+    font-size: 40px;
+  }
+  
+  .contactBox p {
+    margin: 5px 0;
+  }
+  
+  .button {
+    background-color: #00897b;
+    color: #003b49;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    /* width: 100%; */
+    margin-top: 5px;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 0;
+    background-color: #d7f3f8;
+    color: #003b49;
+  }
+  
+  .submitButton {
+    background-color: #00897b;
+    color: #003b49;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactInfo {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }

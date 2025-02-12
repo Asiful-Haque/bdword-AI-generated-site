@@ -8,7 +8,7 @@
   .faqTitle {
     text-align: center;
     font-size: 66px;
-    color: #fcfcfc;
+    color: rgb(215,243,248);
     margin-bottom: 30px;
     font-weight: bolder;
   }
@@ -21,7 +21,7 @@
   
   .faqItem {
     width: 80%;
-    background-color: #ffffff;
+    background-color: rgb(215,243,248);
     border-radius: 8px;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px #093b42;

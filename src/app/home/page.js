@@ -1,6 +1,8 @@
 // pages/index.js
+import ContactForm from '../components/ContactForm';
 import FAQ from '../components/FAQ';
 import FeatureSection from '../components/FeatureSection';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import MainContent from '../components/MainContent';
 import Slider from '../components/Slider';
@@ -34,6 +36,8 @@ export default function Home() {
        <Slider testimonials={demoTestimonials} />
        <TwoPart/>
        <FeatureSection />
+       <ContactForm />
+       <Footer />
     </div>
   );
 }
