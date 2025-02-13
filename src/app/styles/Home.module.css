@@ -3,7 +3,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0f7fa;
+    background-color: #D6F4F4;
   }
   
   .header {
@@ -57,6 +57,7 @@
   
   .textContainer {
     max-width: 50%;
+    padding-left: 40px;
   }
   
   .textContainer h1 {
@@ -66,16 +67,17 @@
   }
   
   .textContainer p {
-    font-size: 38px;
+    font-size: 18px;
     margin-top: 10px;
     color: #004d40;
     margin-bottom: 30px;
+    text-align: justify;
   }
   
   .startBtn {
-    background-color: #74dce1f6;
+    background-color: #00897B;
     color: rgb(255, 255, 255);
-    padding: 20px 40px;
+    padding: 10px 30px;
     border: none;
     cursor: pointer;
     border-radius: 45px;
@@ -88,7 +90,10 @@
   }
   
   .imageContainer {
-    max-width: 40%;
+    max-width: 50%;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background: transparent;
   }
   
   .googleImg {
@@ -97,3 +102,31 @@
     border-radius: 50%;
   }
   
+  /* Button container and button styling */
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.heroButton {
+  padding: 10px 15px;
+  background-color: #00897B;
+  /* border: 1px solid #ddd; */
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: Bold;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.heroButton:hover {
+  background-color:#0c362f;
+  transform: scale(1.05);
+}
