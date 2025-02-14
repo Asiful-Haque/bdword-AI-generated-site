@@ -1,8 +1,19 @@
-// components/MainContent.js
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import styles from "../styles/Home.module.css";
 // import Image from "next/image";
 
 const MainContent = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+
+  const handleSearch = () => {
+    if (searchQuery.trim() !== "") {
+      router.push(`/search?query=${searchQuery}`); // ✅ Navigate to /search page with query
+    }
+  };
   return (
     <div>
       <section className={styles.mainContent}>
@@ -34,6 +45,7 @@ const MainContent = () => {
           height={500}
         />
       </div> */}
+
         <div className={styles.imageContainer}>
           <video autoPlay loop muted playsInline className={styles.video}>
             <source src="/EnglishWelsh1.mp4" type="video/mp4" />
@@ -41,7 +53,21 @@ const MainContent = () => {
           </video>
         </div>
       </section>
-      {/* <div className={styles.buttonContainer}>
+      
+      <div className={styles.searchBox}>
+        <input
+          type="text"
+          placeholder="Search for a word..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+          className={styles.searchInput}
+        />
+        <button onClick={handleSearch} className={styles.searchBtn}>
+          Search
+        </button>
+      </div>
+      <div className={styles.buttonContainer}>
         <button className={styles.heroButton}>
           <a
             href="https://www.bdword.com/bengali-to-english-dictionary"
@@ -98,7 +124,7 @@ const MainContent = () => {
             Word Search History
           </a>
         </button>
-      </div> */}
+      </div>
     </div>
   );
 };
